@@ -1,4 +1,4 @@
-/* @font-face {
+@font-face {
   font-family: 'Cinzel Regular';
   src: url('../fonts/cinzel/Cinzel-Regular.ttf') format('truetype');
 }
@@ -14,6 +14,6 @@
 }
 
 @font-face {
-  font-family: 'Extra ExtraBold';
+  font-family: 'Cinzel ExtraBold';
   src: url('../fonts/cinzel/Cinzel-ExtraBold.ttf') format('truetype');
-} */
+}

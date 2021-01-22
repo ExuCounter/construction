@@ -9,8 +9,8 @@ html {
 
 body {
   font-size: 1em;
-  font-family: 'Cinzel Regular', sans-serif;
   overflow: hidden;
+  font-family: 'Cinzel Regular', sans-serif;
 }
 
 .container {
@@ -58,6 +58,7 @@ body {
 .main-paragraph {
   font-size: 1.5rem;
   color: #fff;
+  font-family: 'Cinzel Regular', sans-serif;
 }
 
 .main-row {
@@ -114,6 +115,7 @@ body {
   align-items: center;
   justify-content: center;
   text-align: center;
+  font-family: 'Cinzel Regular', sans-serif;
 }
 
 .main-contact__item img {
@@ -154,13 +156,15 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: rgba(95, 2, 107, 0.301);
+  background-color: rgba(66, 12, 73, 0.301);
   color: #fff;
-  border-radius: 2rem;
+  border-radius: 1rem;
 }
 
 .timer-container__item-value {
   font-size: 4rem;
+  line-height: 1.2;
+  font-family: 'Cinzel Regular', sans-serif;
 }
 
 .timer-container__item-info {
@@ -203,4 +207,5 @@ body {
   font-size: 1.4rem;
   text-align: center;
   display: block;
+  font-family: 'Cinzel ExtraBold', sans-serif;
 }
