@@ -59,6 +59,9 @@
   body {
     overflow: hidden;
   }
+  .main {
+    overflow: hidden;
+  }
   .main-footer {
     bottom: 3rem;
   }
