@@ -59,8 +59,8 @@
   body {
     overflow: hidden;
   }
-  .main {
-    height: calc(100vh - 60px);
+  .main-footer {
+    bottom: 3rem;
   }
   .main-row {
     margin: 0px;
