@@ -114,6 +114,7 @@
   }
   .main-footer__socials {
     width: 7rem;
+    margin-bottom: 0.75rem;
   }
   .main-footer__socials a img {
     max-height: 3rem;
