@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Construction</title>
+
+    <!-- BOOTSTRAP -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    />
+
+    <!-- FONTS -->
+    <link rel="stylesheet" href="assets/style/fonts.css" />
+
+    <!-- STYLES -->
+    <link rel="stylesheet" href="assets/style/style.css" />
+    <link rel="stylesheet" href="assets/style/media-queries.css" />
+  </head>
+
+  <body>
+    <main class="main">
+      <div class="container">
+        <div class="row main-row">
+          <div class="left-col col-12 col-sm-6">
+            <img
+              src="assets/img/logo.png"
+              class="main-logo__img"
+              alt="Blackoryx"
+            />
+            <div class="timer-container timer-container__mobile">
+              <div class="timer-container__item">
+                <span class="timer-container__item-value timer-days-mobile">
+                  33
+                </span>
+                <span class="timer-container__item-info"> Days </span>
+              </div>
+              <div class="timer-container__item">
+                <span class="timer-container__item-value timer-hours-mobile">
+                  33
+                </span>
+                <span class="timer-container__item-info"> Hours </span>
+              </div>
+              <div class="timer-container__item">
+                <span class="timer-container__item-value timer-minutes-mobile">
+                  33
+                </span>
+                <span class="timer-container__item-info"> Minutes </span>
+              </div>
+              <div class="timer-container__item">
+                <span class="timer-container__item-value timer-seconds-mobile">
+                  33
+                </span>
+                <span class="timer-container__item-info"> Seconds </span>
+              </div>
+            </div>
+            <h1 class="main-title">Coming Soon</h1>
+            <p class="main-subtitle">
+              We are revamping our website. Stay tuned!
+            </p>
+            <p class="main-paragraph">Subscribe to get notified.</p>
+            <form action="#" class="main-form">
+              <input type="email" placeholder="Enter your email" />
+              <button class="subscribe-btn">Subscribe</button>
+            </form>
+            <div class="main-contact">
+              <div class="main-contact__item">
+                <a href="tel:+(974) 5599 0415">
+                  <img src="assets/img/phone.png" alt="phone" />
+                  <span>+(974) 5599 0415</span>
+                </a>
+              </div>
+              <div class="main-contact__item">
+                <a
+                  href="https://www.google.com/maps/search/The+e18teen+Tower+Office+708B/@25.3844338,51.5208411,17z/data=!3m1!4b1"
+                >
+                  <img src="assets/img/place.png" alt="place" />
+                  <span
+                    >The e18teen Tower<br />
+                    Office 708B</span
+                  >
+                </a>
+              </div>
+              <div class="main-contact__item">
+                <a href="mailto:info@black-oryx.com">
+                  <img src="assets/img/email.png" alt="email" />
+                  <span>black-oryx.com</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="right-col col-sm-6 col-12">
+            <div class="timer-container timer-container__desktop">
+              <div class="timer-container__item">
+                <span class="timer-container__item-value timer-days-desktop">
+                  0
+                </span>
+                <span class="timer-container__item-info"> Days </span>
+              </div>
+              <div class="timer-container__item">
+                <span class="timer-container__item-value timer-hours-desktop">
+                  0
+                </span>
+                <span class="timer-container__item-info"> Hours </span>
+              </div>
+              <div class="timer-container__item">
+                <span class="timer-container__item-value timer-minutes-desktop">
+                  0
+                </span>
+                <span class="timer-container__item-info"> Minutes </span>
+              </div>
+              <div class="timer-container__item">
+                <span class="timer-container__item-value timer-seconds-desktop">
+                  0
+                </span>
+                <span class="timer-container__item-info"> Seconds </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <footer class="main-footer">
+          <div class="main-footer__socials">
+            <a href="/facebook-link">
+              <img src="assets/img/facebook.png" alt="facebook" />
+            </a>
+            <a href="/instagram-link">
+              <img src="assets/img/instagram.png" alt="instagram" />
+            </a>
+          </div>
+          <span class="main-footer__copyright">
+            Black Oryx - © 2021 All Rights Reserved.
+          </span>
+        </footer>
+      </div>
+    </main>
+    <!-- SCRIPTS -->
+    <script src="assets/js/script.js"></script>
+    <script>
+      const countDownDate = new Date('Feb 5, 2021 15:37:25').getTime()
+
+      const x = setInterval(function () {
+        var now = new Date().getTime()
+
+        var distance = countDownDate - now
+
+        const days = Math.floor(distance / (1000 * 60 * 60 * 24))
+        const hours = Math.floor(
+          (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+        )
+        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60))
+        const seconds = Math.floor((distance % (1000 * 60)) / 1000)
+
+        document.querySelector('.timer-days-desktop').innerHTML = days
+        document.querySelector('.timer-hours-desktop').innerHTML = hours
+        document.querySelector('.timer-minutes-desktop').innerHTML = minutes
+        document.querySelector('.timer-seconds-desktop').innerHTML = seconds
+
+        document.querySelector('.timer-days-mobile').innerHTML = days
+        document.querySelector('.timer-hours-mobile').innerHTML = hours
+        document.querySelector('.timer-minutes-mobile').innerHTML = minutes
+        document.querySelector('.timer-seconds-mobile').innerHTML = seconds
+
+        if (distance < 0) {
+          clearInterval(x)
+          document.getElementById('demo').innerHTML = 'EXPIRED'
+        }
+      }, 1000)
+    </script>
+  </body>
+</html>
