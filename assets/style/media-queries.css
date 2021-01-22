@@ -54,10 +54,13 @@
 
 @media screen and (max-width: 578px) {
   html {
-    font-size: 8px;
+    font-size: 7px;
   }
   body {
     overflow: hidden;
+  }
+  .main {
+    height: calc(100vh - 60px);
   }
   .main-row {
     margin: 0px;
@@ -98,13 +101,13 @@
     margin-top: 2.5rem;
   }
   .timer-container__item {
-    padding: 1rem 2rem;
+    padding: 1rem 2.5rem;
   }
   .main-contact__item span {
     line-height: 1.25;
   }
   .main-footer__copyright {
-    font-size: 1.5rem;
+    font-size: 1.75rem;
   }
   .main-footer__socials {
     width: 7rem;
@@ -119,6 +122,6 @@
 
 @media screen and (max-width: 374px) {
   html {
-    font-size: 7px;
+    font-size: 6px;
   }
 }
