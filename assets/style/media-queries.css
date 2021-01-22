@@ -62,6 +62,9 @@
   .main-footer {
     bottom: 3rem;
   }
+  .timer-container__mobile {
+    margin: 4rem 0rem 3rem !important;
+  }
   .main-row {
     margin: 0px;
   }
