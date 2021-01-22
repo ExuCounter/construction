@@ -87,6 +87,7 @@ body {
   background: rgba(92, 90, 86, 0.582);
   color: #fff;
   border: none;
+  font-size: 1.25rem;
 }
 
 .main-form input::placeholder {
@@ -95,6 +96,7 @@ body {
 
 .main-form button {
   padding: 1rem;
+  font-size: 1.25rem;
   border-radius: 1.75rem;
   padding: 0px 3.25rem;
   border: none;
